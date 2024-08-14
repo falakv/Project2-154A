@@ -1,7 +1,7 @@
 # Project 2 README
 
 Student 1: Falak Vakharia (921110749)
-Student 2: Full Name 2 (123456798)
+Student 2: Angela Zhou (920772243)
 
 ## Project Status
 This the current status of the project ...
