@@ -28,9 +28,6 @@
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
     </tool>
-    <tool name="Clock">
-      <a name="facing" val="north"/>
-    </tool>
     <tool name="Constant">
       <a name="value" val="0x1f"/>
       <a name="width" val="5"/>
@@ -516,7 +513,7 @@ end type_architecture;
       <a name="inputs" val="4"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(560,300)" name="NOT Gate">
+    <comp lib="1" loc="(560,310)" name="NOT Gate">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="1" loc="(740,260)" name="OR Gate">
@@ -645,10 +642,7 @@ end type_architecture;
       <a name="label" val="P1"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp loc="(580,240)" name="InputBuffer">
-      <a name="label" val="IB1"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
+    <comp loc="(580,240)" name="InputBuffer"/>
     <comp loc="(670,250)" name="Lock">
       <a name="label" val="L1"/>
       <a name="labelfont" val="SansSerif bold 12"/>
@@ -752,8 +746,7 @@ end type_architecture;
     <wire from="(520,420)" to="(520,430)"/>
     <wire from="(540,370)" to="(540,380)"/>
     <wire from="(540,370)" to="(610,370)"/>
-    <wire from="(560,290)" to="(560,300)"/>
-    <wire from="(560,330)" to="(560,340)"/>
+    <wire from="(560,290)" to="(560,310)"/>
     <wire from="(600,230)" to="(610,230)"/>
     <wire from="(610,210)" to="(610,230)"/>
     <wire from="(610,230)" to="(610,340)"/>
@@ -1337,9 +1330,14 @@ end type_architecture;
     <a name="circuit" val="InputBuffer"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(100,180)" name="Tunnel">
+    <comp lib="0" loc="(120,190)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="CLK"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="0" loc="(150,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(170,120)" name="Tunnel">
@@ -1368,15 +1366,15 @@ end type_architecture;
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="output" val="true"/>
     </comp>
-    <comp lib="0" loc="(190,270)" name="Tunnel">
-      <a name="label" val="V"/>
-      <a name="labelfont" val="SansSerif bold 12"/>
-    </comp>
     <comp lib="0" loc="(190,30)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="labelfont" val="SansSerif bold 12"/>
       <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(190,360)" name="Tunnel">
+      <a name="label" val="V"/>
+      <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(190,60)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -1510,22 +1508,28 @@ end type_architecture;
       <a name="label" val="B2"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(90,200)" name="Clock"/>
-    <comp lib="0" loc="(90,270)" name="Tunnel">
+    <comp lib="0" loc="(70,340)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="Vin"/>
       <a name="labelfont" val="SansSerif bold 12"/>
     </comp>
-    <comp lib="0" loc="(90,310)" name="Tunnel">
+    <comp lib="0" loc="(90,230)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(90,400)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="CLK"/>
       <a name="labelfont" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="1" loc="(120,190)" name="OR Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
     </comp>
     <comp lib="2" loc="(400,140)" name="Multiplexer"/>
     <comp lib="2" loc="(400,230)" name="Multiplexer"/>
     <comp lib="2" loc="(400,320)" name="Multiplexer"/>
     <comp lib="2" loc="(400,40)" name="Multiplexer"/>
-    <comp lib="4" loc="(130,260)" name="T Flip-Flop">
+    <comp lib="4" loc="(130,350)" name="T Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
     <comp lib="4" loc="(450,130)" name="D Flip-Flop">
@@ -1540,12 +1544,14 @@ end type_architecture;
     <comp lib="4" loc="(450,310)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
     </comp>
-    <wire from="(100,180)" to="(100,200)"/>
+    <wire from="(110,220)" to="(110,230)"/>
+    <wire from="(130,220)" to="(130,230)"/>
+    <wire from="(130,230)" to="(150,230)"/>
     <wire from="(170,120)" to="(190,120)"/>
     <wire from="(170,30)" to="(190,30)"/>
     <wire from="(170,60)" to="(190,60)"/>
     <wire from="(170,90)" to="(190,90)"/>
-    <wire from="(180,270)" to="(190,270)"/>
+    <wire from="(180,360)" to="(190,360)"/>
     <wire from="(340,130)" to="(370,130)"/>
     <wire from="(340,220)" to="(370,220)"/>
     <wire from="(340,30)" to="(370,30)"/>
@@ -1571,9 +1577,11 @@ end type_architecture;
     <wire from="(430,270)" to="(440,270)"/>
     <wire from="(430,360)" to="(440,360)"/>
     <wire from="(430,80)" to="(440,80)"/>
-    <wire from="(90,200)" to="(100,200)"/>
-    <wire from="(90,270)" to="(120,270)"/>
-    <wire from="(90,310)" to="(120,310)"/>
+    <wire from="(70,340)" to="(90,340)"/>
+    <wire from="(90,230)" to="(110,230)"/>
+    <wire from="(90,340)" to="(90,360)"/>
+    <wire from="(90,360)" to="(120,360)"/>
+    <wire from="(90,400)" to="(120,400)"/>
   </circuit>
   <circuit name="Lock">
     <a name="circuit" val="Lock"/>
