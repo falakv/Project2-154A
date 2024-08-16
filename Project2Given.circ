@@ -47,7 +47,6 @@
       <a name="size" val="30"/>
     </tool>
     <tool name="OR Gate">
-      <a name="facing" val="north"/>
       <a name="size" val="30"/>
     </tool>
     <tool name="XOR Gate">
@@ -1540,7 +1539,13 @@ end type_architecture;
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
     </comp>
+    <comp lib="1" loc="(140,360)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
     <comp lib="1" loc="(270,410)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(90,350)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="2" loc="(400,140)" name="Multiplexer"/>
@@ -1579,6 +1584,7 @@ end type_architecture;
     <wire from="(170,30)" to="(190,30)"/>
     <wire from="(170,60)" to="(190,60)"/>
     <wire from="(170,90)" to="(190,90)"/>
+    <wire from="(200,320)" to="(200,360)"/>
     <wire from="(200,400)" to="(220,400)"/>
     <wire from="(200,430)" to="(200,470)"/>
     <wire from="(200,470)" to="(230,470)"/>
@@ -1591,7 +1597,7 @@ end type_architecture;
     <wire from="(270,410)" to="(280,410)"/>
     <wire from="(280,380)" to="(280,410)"/>
     <wire from="(280,380)" to="(290,380)"/>
-    <wire from="(30,460)" to="(70,460)"/>
+    <wire from="(30,460)" to="(40,460)"/>
     <wire from="(340,130)" to="(370,130)"/>
     <wire from="(340,220)" to="(370,220)"/>
     <wire from="(340,30)" to="(370,30)"/>
@@ -1607,6 +1613,12 @@ end type_architecture;
     <wire from="(40,120)" to="(60,120)"/>
     <wire from="(40,150)" to="(60,150)"/>
     <wire from="(40,30)" to="(60,30)"/>
+    <wire from="(40,320)" to="(200,320)"/>
+    <wire from="(40,320)" to="(40,340)"/>
+    <wire from="(40,340)" to="(60,340)"/>
+    <wire from="(40,360)" to="(40,460)"/>
+    <wire from="(40,360)" to="(60,360)"/>
+    <wire from="(40,460)" to="(70,460)"/>
     <wire from="(40,470)" to="(40,540)"/>
     <wire from="(40,470)" to="(70,470)"/>
     <wire from="(40,540)" to="(220,540)"/>
@@ -1627,10 +1639,11 @@ end type_architecture;
     <wire from="(60,480)" to="(60,530)"/>
     <wire from="(60,480)" to="(70,480)"/>
     <wire from="(60,530)" to="(210,530)"/>
-    <wire from="(80,360)" to="(140,360)"/>
-    <wire from="(80,360)" to="(80,430)"/>
+    <wire from="(80,370)" to="(110,370)"/>
+    <wire from="(80,370)" to="(80,430)"/>
     <wire from="(80,430)" to="(200,430)"/>
     <wire from="(90,230)" to="(110,230)"/>
+    <wire from="(90,350)" to="(110,350)"/>
   </circuit>
   <circuit name="Lock">
     <a name="circuit" val="Lock"/>
