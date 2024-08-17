@@ -10,8 +10,8 @@ This the current status of the project ...
 The project fails to function properly in ...
 
 ## References
-
-
+[Finite State Machines](https://pdhacademy.com/wp-content/uploads/2022/01/Finite-State-Machines-Course-for-Website.pdf)
+[Larger 5 & 6-variable Karnaugh Maps](https://www.allaboutcircuits.com/textbook/digital/chpt-8/larger-5-6-variable-karnaugh-maps/)
 ## Generative AI Use
 
 
