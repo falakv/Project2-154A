@@ -4,10 +4,9 @@ Student 1: Falak Vakharia (921110749)
 Student 2: Angela Zhou (920772243)
 
 ## Project Status
-Mostly completed. 
-
+Completed!
 ## Known Issues
-Need to prevent locking/unlocking from toggling while the lock is locked/unlocked already. 
+none!
 
 
 ## References
