@@ -4,10 +4,11 @@ Student 1: Falak Vakharia (921110749)
 Student 2: Angela Zhou (920772243)
 
 ## Project Status
-Parts completed . Unholy eldrich abomination of comparator implemented RAHHHH
+Mostly completed. 
 
 ## Known Issues
-I HOPE NOT (although testing in main is finnicky)
+Need to prevent locking/unlocking from toggling while the lock is locked/unlocked already. 
+
 
 ## References
 [Finite State Machines](https://pdhacademy.com/wp-content/uploads/2022/01/Finite-State-Machines-Course-for-Website.pdf)
